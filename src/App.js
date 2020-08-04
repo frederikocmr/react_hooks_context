@@ -2,7 +2,10 @@ import React, { useContext } from "react";
 import { store } from "./store";
 
 function App() {
+  // To access the shared state 
   const globalState = useContext(store);
+  
+  // To dispatch actions
   const { dispatch } = globalState;
 
   const addToCart = () => {
