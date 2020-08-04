@@ -6,7 +6,7 @@ import initialState from './state';
 const store = createContext(initialState);
 const { Provider } = store;
 
-function combineReducers(reducers) {  
+const combineReducers = (reducers) => {  
     return (state = {}, action) => {
       const newState = {};
       for (let key in reducers) {
